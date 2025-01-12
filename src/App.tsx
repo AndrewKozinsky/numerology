@@ -8,8 +8,8 @@ function App() {
 		tg.ready()
 
 		// Access initialization data (user, chat, etc.)
-		console.log(tg.initDataUnsafe)
-		alert(tg.initDataUnsafe.user)
+		// console.log(tg.initDataUnsafe)
+		// alert(tg.initDataUnsafe.user)
 		alert(tg.initDataUnsafe.user.username)
 
 		// Show Telegram's main button
@@ -32,7 +32,7 @@ function App() {
 		}*/
 	}, [])
 
-	return <div>world 1</div>
+	return <div>world 2</div>
 }
 
 export default App
