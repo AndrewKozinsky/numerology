@@ -1,16 +1,17 @@
 import { useEffect } from 'react'
 
-const tg = window.Telegram.WebApp
-
 function App() {
 	useEffect(() => {
+		const tg = window.Telegram.WebApp
+
 		// Initialize Telegram Web App
 		tg.ready()
 
 		// Access initialization data (user, chat, etc.)
 		// console.log(tg.initDataUnsafe)
-		// alert(tg.initDataUnsafe.user)
-		alert(tg.initDataUnsafe?.user?.username)
+		alert(tg.initDataUnsafe.user.first_name)
+		alert(tg.initDataUnsafe.user.last_name)
+		// alert(tg.initDataUnsafe?.user?.username)
 
 		// Show Telegram's main button
 		// tg.MainButton.text = 'Click Me'
@@ -32,7 +33,7 @@ function App() {
 		}*/
 	}, [])
 
-	return <div>world 3</div>
+	return <div>world 4</div>
 }
 
 export default App

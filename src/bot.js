@@ -1,6 +1,7 @@
 import { Markup, Telegraf } from 'telegraf'
 
-const token = '7637210777:AAFNQTegmOldPIdz2S_MjuuHqtBBzcxjD4E'
+// t.me/TGReactAppTestBot
+const token = '7070479202:AAHf0K_unvE-Cq-e8SjfLte3CXI4MjwVNlc'
 const webAppUrl = 'https://test.explainit.ru'
 
 // Создание бота
@@ -11,7 +12,7 @@ bot.command('start', (ctx) => {
 	// Ответ, который бот даст пользователю на команду /start
 	ctx.reply(
 		'Добро пожаловать! Нажмите на кнопку ниже, чтобы запустить приложение.',
-		Markup.keyboard([Markup.button.webApp('Отправить сообщение', webAppUrl)]),
+		// Markup.keyboard([Markup.button.webApp('Отправить сообщение', webAppUrl)]),
 	)
 })
 
