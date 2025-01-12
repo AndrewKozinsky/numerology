@@ -1,6 +1,5 @@
 import { useEffect } from 'react'
 
-// @ts-ignore
 const tg = window.Telegram.WebApp
 
 function App() {
@@ -10,6 +9,8 @@ function App() {
 
 		// Access initialization data (user, chat, etc.)
 		console.log(tg.initDataUnsafe)
+		alert(tg.initDataUnsafe.user)
+		alert(tg.initDataUnsafe.user.username)
 
 		// Show Telegram's main button
 		// tg.MainButton.text = 'Click Me'
